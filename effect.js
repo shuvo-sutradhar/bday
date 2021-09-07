@@ -139,7 +139,7 @@ $('document').ready(function(){
 	$('#balloons_flying').click(function(){
 		$('.balloon-border').animate({top:-500},8000);
 		$('#b1,#b4,#b5,#b7, #b9,#b10').addClass('balloons-rotate-behaviour-one');
-		$('#b2,#b3,#b6, #b8,#b00').addClass('balloons-rotate-behaviour-two');
+		$('#b2,#b3,#b6, #b8,#b0').addClass('balloons-rotate-behaviour-two');
 		// $('#b3').addClass('balloons-rotate-behaviour-two');
 		// $('#b4').addClass('balloons-rotate-behaviour-one');
 		// $('#b5').addClass('balloons-rotate-behaviour-one');
