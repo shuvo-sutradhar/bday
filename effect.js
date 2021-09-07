@@ -260,9 +260,9 @@ function sendEmail() {
 
 
 	Email.send({
-		Host: "smtp.gmail.com",
-		Username : "shuvossd1@gmail.com",
-		Password : "01834934583",
+		Host: "smtp.mailtrap.io",
+		Username : "d8a20ea47fc67e",
+		Password : "444ddfdc2f0094",
 		To : 'shuvosutradhar00@gmail.com',
 		From : "shuvossd1@gmail.com",
 		Subject : "Shimonty Birthday",
