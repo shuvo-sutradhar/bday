@@ -131,7 +131,7 @@ $('document').ready(function(){
 	function loop11() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b00').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b0').animate({left:randleft,bottom:randtop},10000,function(){
 			loop11();
 		});
 	}
