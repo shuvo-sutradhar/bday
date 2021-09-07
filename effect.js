@@ -30,7 +30,7 @@ $('document').ready(function(){
 		$('body').addClass('peach');
 		$(this).fadeOut('slow').delay(1000).promise().done(function(){
 			$('#play').fadeIn('slow');
-			sendEmail();
+			sendEmail('click on play');
 			// $('#wish_message').fadeIn('slow');
 		});
 	});
@@ -166,6 +166,7 @@ $('document').ready(function(){
 		$('.cake').fadeIn('slow');
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
+			sendEmail('click on light candle');
 		});
 	});
 
@@ -173,6 +174,7 @@ $('document').ready(function(){
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
+			sendEmail('click on wish message');
 		});
 	});
 
@@ -212,7 +214,7 @@ $('document').ready(function(){
 	});
 	
 	$('#story').click(function(){
-		sendEmail();
+		sendEmail("click on message reading");
 		$(this).fadeOut('slow');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
@@ -246,7 +248,7 @@ $('document').ready(function(){
 
 
 
-function sendEmail() {
+function sendEmail(data) {
 
 	// Email.send({
 	//     SecureToken : "461dc4cc-ec69-442a-8715-e3c63a9f3c3f",
@@ -266,7 +268,7 @@ function sendEmail() {
 		To : 'shuvosutradhar00@gmail.com',
 		From : "shuvossd1@gmail.com",
 		Subject : "Shimonty Birthday",
-		Body : "Started reading text",
+		Body : data,
 	}).then(
 	   message => console.log(message)
 	);
